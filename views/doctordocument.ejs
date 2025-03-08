@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Important Documents Upload</title>
+    <link rel="stylesheet" href="/public/stylesheets/doctordocument.css">
+</head>
+<body>
+    <div class="body">
+    <div class="container">
+        <h2>Upload Documents</h2>
+        
+        
+        <form id="uploadForm">
+            <div class="file-group">
+                <label>Medical License:</label>
+                <input type="file" accept=".pdf,.doc,.docx,.jpg" required>
+            </div>
+            <div class="file-group">
+                <label>Government ID:</label>
+                <input type="file" accept=".pdf,.doc,.docx,.jpg" required>
+            </div>
+            <div class="file-group">
+                <label>Medical Degree:</label>
+                <input type="file" accept=".pdf,.doc,.docx,.jpg" required>
+            </div>
+            <div class="file-group">
+                <label>Certification 1:</label>
+                <input type="file" accept=".pdf,.doc,.docx,.jpg" required>
+            </div>
+            <div class="file-group">
+                <label>Certification 2:</label>
+                <input type="file" accept=".pdf,.doc,.docx,.jpg" required>
+            </div>
+            <div class="file-group">
+                <label>Hospital Affiliation Letter:</label>
+                <input type="file" accept=".pdf,.doc,.docx,.jpg" required>
+            </div>
+
+            <button type="submit">Upload Documents</button>
+        </form>
+
+        <div id="fileList"></div>
+    </div>
+
+    <script src="/public/javascripts/document.js"></script>
+    </div>
+</body>
+</html>

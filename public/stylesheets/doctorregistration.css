@@ -1,0 +1,89 @@
+/* General Styles */
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #e5eaeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Form Container */
+.container {
+    background: rgb(235, 239, 243);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Form Title */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Labels */
+label {
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Input Fields */
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* File Upload */
+input[type="file"] {
+    border: none;
+}
+
+/* Display uploaded file name */
+#file-name {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Password Message */
+#password-message {
+    font-size: 14px;
+    color: red;
+}
+
+/* Submit Button */
+button {
+    background: #76acbb;
+    color: white;
+    padding: 10px;
+    border:rgb(39, 37, 37);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #2e6188;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+/* Success Message */
+#result {
+    margin-top: 20px;
+    padding: 15px;
+    background: #dff0d8;
+    color: #3c763d;
+    border-radius: 5px;
+}

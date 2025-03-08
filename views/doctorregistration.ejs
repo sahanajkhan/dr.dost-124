@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Registration Form</title>
+    <link rel="stylesheet" href="/public/stylesheets/doctorregistration.css">
+</head>
+<body>
+<div class="body">
+<div class="container">
+    <h2>Doctor Registration</h2>
+    <form action="/doctorregistration" method="post">  
+    <form id="doctorForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="specialization">Specialization:</label>
+        <select id="specialization" name="specialization" required>
+            <option value="">Select Specialization</option>
+            <option value="Cardiologist">Cardiologist</option>
+            <option value="Dermatologist">Dermatologist</option>
+            <option value="Pediatrician">Pediatrician</option>
+            <option value="Neurologist">Neurologist</option>
+            <option value="Orthopedic">Orthopedic</option>
+        </select>
+
+        <label for="licenseNumber">License Number:</label>
+        <input type="text" id="licenseNumber" name="licenseNumber" placeholder="Enter your license number" required>
+
+        <label for="experience">Years of Experience:</label>
+        <input type="number" id="experience" name="experience" placeholder="Enter experience in years" required>
+
+        <label for="hospital">Hospital/Clinic Name:</label>
+        <input type="text" id="hospital" name="hospital" placeholder="Enter hospital/clinic name" required>
+
+        
+
+        <label for="password">Create Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+        
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required>
+        
+        <p id="password-message"></p>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <div id="result" class="hidden"></div>
+</div>
+
+<script src="/public/javascripts/registration.js"></script>
+</div>
+</body>
+</html>

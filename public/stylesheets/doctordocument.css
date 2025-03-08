@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?%20family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.body {
+    /*font-family: Arial, sans-serif;*/
+    background: #eaf1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(242, 244, 245);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 350px;
+    
+}
+
+h2 {
+    color: #030303;
+}
+
+.file-group {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.file-group label {
+    font-weight: bold;
+}
+
+input[type="file"] {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+button {
+    background: #6e99ce;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #2182c2;
+}
+
+#fileList {
+    margin-top: 15px;
+}

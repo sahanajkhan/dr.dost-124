@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. DOST</title>
+    <link rel="stylesheet" href="/public/stylesheets/home.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
+</head>
+<body>
+
+    <!-- Header Section -->
+       <header>
+        <div class="navbar">
+            <div class="logo">
+              <img src="/public/images/WhatsApp_Image_2025-02-09_at_11.23.35_AM-removebg-preview.png"  width="80px" height="80px">  
+                </div>
+            <ul class="links">
+                <li><a href="home.ejs">Home</a></li>
+                <li><a href="aboutus.ejs">About</a></li>
+                <li><a href="finddoctor.ejs">Find Doctor</a></li>
+                <li><a href="doctorlogin.ejs" class="action_btn">Sign In</a></li>
+           </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="home.ejs">Home</a></li>
+                <li><a href="aboutus.ejs">About</a></li>
+                <li><a href="finddoctor.ejs">Find Doctor</a></li>
+                <li><a href="doctorlogin.ejs" class="action_btn">Sign In</a></li>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="hero">
+            
+              <h1>Connect with<br/>
+                Doctors in just a few minutes!
+            </h1>
+            <p>Book appointments with specialists or general practitioners quickly and easily. Your health is just a tap away.</p>
+            <p>Your Health, Anytime, Anywhere</p>
+        </section>
+    </main>
+    <div class="wrapper">
+      <p></p>
+        <p></p>
+        <h1>Frequently Asked Questions (FAQs) </h1>
+  
+        <div class="faq">
+          <button class="accordion">
+            1. How does this telemedicine platform help patients in remote areas?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              Telemedicine allows you to consult with healthcare providers remotely via video calls, phone calls, or chat, eliminating the need for in-person visits.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq">
+          <button class="accordion">
+            2. How does it work?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+                Our platform connects patients with certified doctors through video calls, chat, or virtual consultations, eliminating the need for long-distance travel. We also support multiple languages to make healthcare more accessible.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq">
+          <button class="accordion">
+            3. Can I schedule an appointment at any time?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+                Yes, you can book an appointment 24/7 based on doctor availability. Our platform ensures you get timely medical assistance.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq">
+          <button class="accordion">
+            4. What kind of medical conditions can be treated via telemedicine?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+                You can consult doctors for common illnesses like fever, infections, allergies, mental health concerns, chronic disease management, and more. However, emergencies require immediate in-person medical attention.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq">
+          <button class="accordion">
+           5. Can I get an electronic prescription?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+                Yes, after your consultation, the doctor can issue an electronic prescription, which you can download or have sent directly to a pharmacy.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq">
+          <button class="accordion">
+            6. Is my personal and medical data secure?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+                Absolutely. We use end-to-end encryption and comply with healthcare data protection regulations to ensure your privacy and security.
+            </p>
+          </div>
+        </div>
+      </div>
+    
+       <!-- Chatbot Floating Icon -->
+    <div class="chatbot-icon" id="chatbotIcon">
+      <img src="/public/images/18355220.png" alt="Chatbot">
+  </div>
+
+  <!-- Chatbox -->
+  <div class="chat-box" id="chatBox">
+      <div class="chat-header">
+          <span><img src="/public/images/18355220.png" width="30px">   MedAI Chatbot</span>
+          <button id="closeChat"><img src="/public/images/close-removebg-preview.png"width="10" height="10"></button>
+      </div>
+      
+      <div class="chat-container" id="chatContainer">
+          <div class="ai-chat-box">
+              <div class="ai-chat-area">
+                  Hi there! 😊 How can I assist you with your health concerns?
+              </div>
+          </div>
+      </div>
+      
+      <div class="prompt-area">
+          <input type="text" id="prompt" placeholder="Ask about symptoms, prescriptions..." onkeydown="handleKeyPress(event)">
+          <button id="sendBtn" onclick="sendMessage()"> Send</button>
+      </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h2>Dr. DOST</h2>
+            <p>Dr. DOST Medical & Healthcare Center</p>
+            <p>📍 123 Kota St., Rajasthan City 12345</p>
+            <p>📞 123-456-7890</p>
+            <p>✉ <a href="mailto:hellocallcenter@prohealth.com">hellocallcenter@prohealth.com</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Departments</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">Timetable</a></li>
+                <li><a href="#">Appointment</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>More</h3>
+            <ul>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><img src="https://img.icons8.com/?size=96&id=uLWV5A9vXIPu&format=png" width="30px" alt=""></a>
+                <a href="#"><img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png" width="30px"></a>
+                <a href="#"><img src="https://img.icons8.com/?size=96&id=xuvGCOXi8Wyg&format=png" width="30px" alt=""></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/public/javascripts/JS/navbar.js"></script>
+<script src="/public/javascripts/JS/faq.js"></script>
+<script src="/public/javascripts/JS/chatboticon.js"></script>
+<script src="/public/javascripts/JS/chatbot.js"></script>
+</body>
+</html>
+

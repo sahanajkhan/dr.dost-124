@@ -1,0 +1,96 @@
+
+    .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: linear-gradient(to bottom, #00c6fb, #005bea);
+        
+        background-image: url('https://cdn.sanity.io/images/0vv8moc6/medec/ed0d0a2f6bfa9f0caa6bbb2f52c2abb4806552fe-7700x3592.jpg?auto=format'); /* Path to the image */
+        background-size: cover; /* Ensures the image covers the entire background */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents repeating */
+        
+    }
+    .container {
+        display: flex;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50px;
+        overflow: hidden;
+        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+    }
+    .form-container {
+        display: flex;
+    }
+    .register-container, .login-container {
+        padding: 40px;
+        width: 300px;
+        text-align: center;
+        
+    }
+    .register-btn {
+        background-color: #bedcf0; /* Blue background */
+    color: rgb(24, 21, 21); /* White text */
+    padding: 12px 24px; /* Top-bottom and left-right padding */
+    font-size: 16px; /* Font size */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s;
+}
+    .register-btn:hover {
+        
+        background-color: #2980b9; /* Darker blue on hover */
+
+}
+.register-btn:active {
+    transform: scale(0.95);
+}
+.Forgot:active {
+    transform: scale(0.95);
+
+}
+    
+    .register-container {
+        background: rgb(99, 140, 187);
+        color: white;
+        
+    }
+    .login-container input {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+    .login-btn {
+        background-color: #bedcf0; /* Blue background */
+    color: rgb(24, 21, 21); /* White text */
+    padding: 12px 24px; /* Top-bottom and left-right padding */
+    font-size: 16px; /* Font size */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s;
+    }
+    .login-btn:hover {
+        background-color: #2980b9; /* Darker blue on hover */
+}
+.login-btn:active {
+    transform: scale(0.95);
+}
+
+    .google button {
+        background-image: url('https://www.droid-life.com/wp-content/uploads/2015/09/new-google-logo.jpg');
+        background-size: cover; /* Ensures the image covers the entire background */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat;
+        padding: 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .google:active {
+        transform: scale(0.95);
+}
+
+
+

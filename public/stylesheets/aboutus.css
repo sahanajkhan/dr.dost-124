@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 10%;
+    margin:40px 10%;
+    box-shadow:2px 2px 5px rgba(31, 67, 184, 0.897);
+    border-radius: 10px;
+
+    background: white;
+}
+/* Left Text Content */
+.about-content {
+    max-width: 50%;
+}
+
+.about-content h3 {
+    color: #1E73BE;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-content h1 {
+    font-size: 32px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Right Image */
+
+
+.about-image img {
+    width:450px;
+    height:300px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(31, 67, 184, 0.897);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-content {
+        max-width: 100%;
+    }
+    .about-image {
+        max-width: auto;
+        margin-top: 20px;
+    }
+}
+

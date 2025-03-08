@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Toggle Boxes</title>
+    <link rel="stylesheet" href="/public/stylesheets/finddoctor.css">
+
+</head>
+
+<body>
+
+    <div class="text">
+        <h1>Our Department</h1>
+        <h2>For Your Health</h2>
+    </div>
+
+    <div class="container">
+        <button class="btn" onclick="toggleBox(1)">
+            <p>Emergency Department</p>
+            <img src="/public/images/ambulance.jpg" width="50px" height="50px"></img>
+        </button>
+        <button class="btn" onclick="toggleBox(2)">
+            <p>Pediatric Department</p>
+            <img src="/public/images/pediatric.jpg" width="50px" height="50px">
+        </button>
+        <button class="btn" onclick="toggleBox(3)">
+            <p>Obstetrics and Gynecology Department</p>
+            <img src="/public/images/female.jpg" width="50px" height="50px">
+        </button>
+        <button class="btn" onclick="toggleBox(4)">
+            <p>Cardiology Department</p>
+            <img src="/public/images/heart.jpg" width="50px" height="50px">
+        </button>
+        <button class="btn" onclick="toggleBox(5)">
+            <p>Neurology Department</p>
+            <img src="/public/images/Neuro.webp" width="50px" height="50px">
+        </button>
+        <button class="btn" onclick="toggleBox(6)">
+            <p>Psychiatry Department</p>
+            <img src="/public/images/brain.jpg" width="50px" height="50px">
+        </button>
+    </div>
+
+    <div class="box-container">
+        <div id="box1" class="box">
+            <img src="/public/images/brain.jpg"></img>
+            <ol>
+                <li>name:</li>
+                <li>specialization:</li>
+                <li>expriance:</li>
+                <li>phone number:</li>
+            </ol>
+            <div class="profile-btn">
+                <button><a href="online-chat.ejs">online chat</a></button>
+            </div>
+        </div>
+        <div id="box2" class="box">
+            <img src="/public/images/brain.jpg">
+            <ol>
+                <li>name:</li>
+                <li>specialization:</li>
+                <li>expriance:</li>
+                <li>phone number:</li>
+            </ol>
+            <div class="profile-btn">
+                <button>online chat</button>
+            </div>
+        </div>
+        <div id="box3" class="box">
+            <img src="/public/images/brain.jpg">
+            <ol>
+                <li>name:</li>
+                <li>specialization:</li>
+                <li>expriance:</li>
+                <li>phone number:</li>
+            </ol>
+            <div class="profile-btn">
+                <button>online chat</button>
+            </div>
+        </div>
+        <div id="box4" class="box">
+            <img src="/public/images/brain.jpg">
+            <ol>
+                <li>name:</li>
+                <li>specialization:</li>
+                <li>expriance:</li>
+                <li>phone number:</li>
+            </ol>
+            <div class="profile-btn">
+                <button>online chat</button>
+            </div>
+        </div>
+        <div id="box5" class="box">
+            <img src="/public/images/brain.jpg">
+            <ol>
+                <li>name:</li>
+                <li>specialization:</li>
+                <li>expriance:</li>
+                <li>phone number:</li>
+            </ol>
+            <div class="profile-btn">
+                <button>online chat</button>
+            </div>
+        </div>
+        <div id="box6" class="box">
+            <img src="/public/images/brain.jpg">
+            <ol>
+                <li>name:</li>
+                <li>specialization:</li>
+                <li>expriance:</li>
+                <li>phone number:</li>
+            </ol>
+            <div class="profile-btn">
+                <button>online chat</button>
+            </div>
+        </div>
+    </div>
+    <script src="/public/javascripts/finddoctor.js"></script>
+
+</body>
+
+</html>

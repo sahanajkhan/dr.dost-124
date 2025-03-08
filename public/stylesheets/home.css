@@ -1,0 +1,471 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Background Settings */
+body {
+    height: 100vh;
+    background-color: #ffffff;
+    background-image: url('https://www.shutterstock.com/image-photo/young-asia-lady-doctor-white-600nw-1907687311.jpg'); /* Adjust path as needed */
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* General Styles */
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: rgb(246, 252, 252);
+}
+
+/* Header & Navbar */
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar .logo a {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: #070000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Button Styles */
+.action_btn {
+    background-color: rgb(176, 197, 255);
+    color: #060606;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.action_btn:hover {
+    transform: scale(1.05);
+    color: #f9f7f7;
+}
+
+.action_btn:active {
+    transform: scale(0.95);
+}
+
+/* Dropdown Menu */
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter:blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Open Dropdown */
+.dropdown_menu.open {
+    display: block;
+    height: 240px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Hero Section */
+section#hero {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #030303;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+    
+    .navbar .toggle_btn {
+        display: block;
+    }
+    
+    .dropdown_menu {
+        display: block;
+        height: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: auto;
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.wrapper {
+    max-width: 75%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+
+  .wrapper > p,
+  .wrapper > h1 {
+    text-align: center;
+    margin-top: 2px; /* Less space on top */
+    margin-bottom: 0.5px; /* Less space below */
+    line-height: 1.2;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    gap: 0.5px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .wrapper > p {
+    margin-top: 0px; /* Remove extra space on top */
+    line-height: 1.3; /* Adjust line spacing */
+    color: #7e7373;
+  }
+
+  .wrapper > h1 {
+    letter-spacing: 2px;
+    margin-bottom: 5px; /* Reduce space below heading */
+  }
+  
+  .accordion {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .accordion i {
+    font-size: 1.6rem;
+  }
+  
+  .active,
+  .accordion:hover {
+    background-color: #faf8f8;
+  }
+  .pannel {
+    padding: 0 2rem 2.5rem 2rem;
+    background-color: white;
+    overflow: hidden;
+    background-color: #f1f7f5;
+    display: none;
+  }
+  .pannel p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  
+  .faq {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); 
+    padding: 20px;
+    border-radius: 8px;
+    background: #fff;
+  }
+  
+  .faq.active {
+    border: none;
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Chatbot Icon Button */
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;   /* Keeps it at the bottom */
+    right: 20px;    /* Moves it to the right side */
+    width: 60px;
+    height: 60px;
+    background: #007BFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.chatbot-icon img {
+    width: 70%;
+    height: auto;
+}
+
+.chatbot-icon:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+#closeChat{
+    background-color: hsl(0, 0%, 94%);
+    color: white;
+    padding: 1.0px 04px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#closeChat:hover {
+    background-color: rgb(255, 0, 0);
+  }
+
+/* Chatbox (Initially Hidden) */
+.chat-box {
+    width: 350px;
+    height: 500px;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;   /* Moves the chatbox to the right */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .chat-box {
+        width: 90%;
+        right: 5%;
+    }
+
+    .chatbot-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+}
+
+.chat-box {
+    width: 350px;
+    height: 500px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(228, 237, 241);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(21, 10, 10, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: hsl(211, 61%, 44%);
+    color: white;
+    font-weight: bold;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 20px;
+}
+.chat-container {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.ai-chat-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.prompt-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 0 0 10px 10px;
+}
+
+.prompt-area input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    font-size: 14px;
+}
+
+.prompt-area button {
+    background: #366fab;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.prompt-area button:hover {
+    background: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #7daadd;
+    color: white;
+    padding: 20px 10px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h2, .footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+}
