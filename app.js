@@ -21,7 +21,7 @@ app.use(cookieParser());
 
 // Models
 const userModel = require("./models/user");
-const userDetailModel = require("./models/userDetail");
+const userDetailModel = require("./models/userdetail");
 const connectionModel = require("./models/connection");
 const doctordb = require("./models/doctor/doctordb");
 const doctordetail = require("./models/doctor/doctordetail");
