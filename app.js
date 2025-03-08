@@ -27,7 +27,7 @@ const doctordb = require("./models/doctor/doctordb");
 const doctordetail = require("./models/doctor/doctordetail");
 
 // Routes
-app.get("/", (req, res) => res.render("Home"));
+app.get("/", (req, res) => res.render("home"));
 app.get("/aboutus", (req, res) => res.render("about"));
 app.get("/finddoctor", (req, res) => res.render("finddoctor"));
 app.get("/doctorlogin", (req, res) => res.render("login"));
