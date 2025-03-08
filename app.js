@@ -43,7 +43,7 @@ app.post("/createUser", async (req, res) => {
             if (match) {
                 let token = jwt.sign({ userId: user._id, email }, process.env.SECRET_KEY);
                 res.cookie("token", token);
-                return res.redirect("/alumuni");
+                return res.redirect("/doctor");
             } else {
                 return res.status(401).send("Invalid Email or Password");
             }
